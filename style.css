@@ -1,0 +1,57 @@
+/* var ctx;
+window.onload = function () {
+    var angle = Math.PI / 180;
+    var canvas = document.getElementById("canvas");
+    ctx = canvas.getContext("2d");
+    var domates = 120; //red
+    var patates = 180; //yellow
+    var patlicane = 60; //blue
+
+    sayi = 0;
+
+
+    function eylem() {
+        if (sayi >= 360) {
+            clearInterval(saydir);
+        }
+
+        if (sayi <= domates) {
+            ctx.fillStyle = "red";
+        }
+        else if (sayi > domates && sayi <= patates) {
+            ctx.fillStyle = "yellow";
+
+        }
+        else {
+            ctx.fillStyle = "blue";
+        }
+
+        ctx.translate(200, 200);
+        ctx.rotate(angle);
+        ctx.translate(-200, -200);
+        ctx.fillRect(200, 200, 2, 100);
+        sayi += 1;
+
+    }
+
+
+
+    saydir = setInterval(eylem, 30);
+} */
+
+form{
+    margin: 45px 0 0 0;
+    text-align: center;
+}
+
+form input{
+    margin: 0 0 0 27px;
+}
+
+.style{
+    display: inline-block;
+    padding: 7px;
+    margin: 0 5px 0 5px;
+    /* border: 2px solid black; */
+    color: white;
+}
